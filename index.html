@@ -50,7 +50,14 @@
     "name": "Tolu Laleye",
     "jobTitle": "Senior Drupal Specialist",
     "email": "laleyetolu@gmail.com",
-    "sameAs": ["https://www.drupal.org/u/tolu_", "https://medium.com/@ideamasn"]
+    "sameAs": ["https://www.drupal.org/u/tolu_", "https://medium.com/@ideamasn", "https://certification.acquia.com/person/certified/tolu-laleye"],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "name": "Acquia Triple Certified Drupal Expert - Drupal 8"},
+      {"@type": "EducationalOccupationalCredential", "name": "Acquia Certified Back End Specialist - Drupal 8"},
+      {"@type": "EducationalOccupationalCredential", "name": "Acquia Certified Front End Specialist - Drupal 8"},
+      {"@type": "EducationalOccupationalCredential", "name": "Acquia Certified Developer - Drupal 8"},
+      {"@type": "EducationalOccupationalCredential", "name": "Acquia Certified Developer - Drupal 7"}
+    ]
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -215,7 +222,16 @@ section{padding:72px 0}
 .about-grid p{margin-bottom:16px}
 .creds{list-style:none; display:grid; gap:14px}
 .creds li{background:rgba(255,255,255,.06); border:1px solid rgba(126,200,227,.18); border-radius:12px; padding:16px 20px; font-size:14.5px}
+.cert-list{list-style:none; margin-top:10px; display:grid; gap:6px}
+.cert-list li{background:none; border:none; border-radius:0; padding:0 0 0 20px; position:relative; font-size:13.5px; color:#AFC8DD}
+.cert-list li::before{content:"\2713"; position:absolute; left:0; color:var(--amber); font-weight:700}
 .creds b{color:var(--white)}
+.badges{display:flex; flex-wrap:wrap; gap:16px; margin-top:44px; justify-content:center}
+.badges a{background:var(--white); border-radius:16px; padding:18px; width:170px; height:170px; display:flex; align-items:center; justify-content:center; transition:transform .15s ease, box-shadow .15s ease}
+.badges a:hover{transform:translateY(-4px); box-shadow:0 12px 26px rgba(0,0,0,.3)}
+.badges a:focus-visible{outline:3px solid var(--sky); outline-offset:3px}
+.badges img{width:100%; height:100%; object-fit:contain}
+@media(max-width:720px){.badges{gap:12px}.badges a{width:140px; height:140px}}
 @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
 
 /* FAQ */
@@ -455,10 +471,26 @@ footer a:hover{color:var(--sky)}
       </div>
       <ul class="creds">
         <li><b>Drupal.org contributor</b> (user tolu_) — patches, issue-queue fixes, and documentation for 11+ years</li>
-        <li><b>5&times; Acquia certified</b> — Developer, Front End &amp; Back End Specialist, and Triple Certified Drupal Expert</li>
+        <li>
+          <b>5&times; Acquia certified</b> — <a href="https://certification.acquia.com/person/certified/tolu-laleye" style="color:var(--sky)">verify on Acquia&rsquo;s registry &rarr;</a>
+          <ul class="cert-list">
+            <li>Acquia Triple Certified Drupal Expert — Drupal 8</li>
+            <li>Certified Back End Specialist — Drupal 8</li>
+            <li>Certified Front End Specialist — Drupal 8</li>
+            <li>Certified Developer — Drupal 8</li>
+            <li>Certified Developer — Drupal 7</li>
+          </ul>
+        </li>
         <li><b>DrupalCamp Montreal speaker</b> — API-first Drupal for enterprise applications</li>
         <li><b>Mentor</b> with Kids &amp; Code, HackWorks, and The HTML500</li>
       </ul>
+    </div>
+    <div class="badges" aria-label="Acquia certification badges">
+      <a href="https://certification.acquia.com/person/certified/tolu-laleye" title="Acquia Triple Certified Drupal Expert — Drupal 8"><img src="https://acquia.widen.net/content/i715kandwf/svg/Acquia-Certification-Badge-Drupal-Expert-Drupal-8-EN.svg" alt="Acquia Triple Certified Drupal Expert badge, Drupal 8" loading="lazy"></a>
+      <a href="https://certification.acquia.com/person/certified/tolu-laleye" title="Acquia Certified Back End Specialist — Drupal 8"><img src="https://acquia.widen.net/content/9vtde3uxsl/svg/Acquia-Certification-Badge-Back-End-Specialist-Drupal-8-EN.svg" alt="Acquia Certified Back End Specialist badge, Drupal 8" loading="lazy"></a>
+      <a href="https://certification.acquia.com/person/certified/tolu-laleye" title="Acquia Certified Front End Specialist — Drupal 8"><img src="https://acquia.widen.net/content/r4imh8m94q/svg/Acquia-Certification-Badge-Front-End-Specialist-Drupal-8-EN.svg" alt="Acquia Certified Front End Specialist badge, Drupal 8" loading="lazy"></a>
+      <a href="https://certification.acquia.com/person/certified/tolu-laleye" title="Acquia Certified Developer — Drupal 8"><img src="https://acquia.widen.net/content/zd9nsgirh0/svg/Acquia-Certification-Badge-Developer-Drupal-8-EN.svg" alt="Acquia Certified Developer badge, Drupal 8" loading="lazy"></a>
+      <a href="https://certification.acquia.com/person/certified/tolu-laleye" title="Acquia Certified Developer — Drupal 7"><img src="https://acquia.widen.net/content/iivhr185gt/svg/Acquia-Certification-Badge-Developer-Drupal-7-EN.svg" alt="Acquia Certified Developer badge, Drupal 7" loading="lazy"></a>
     </div>
   </div>
 </section>
